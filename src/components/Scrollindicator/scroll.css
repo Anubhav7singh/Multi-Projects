@@ -1,0 +1,13 @@
+.scroll-progress-container {
+  margin: auto;
+  width: 100%;
+  height: 10px;
+  background-color: blue;
+}
+.current-progress-container {
+  height: 10px;
+  background-color: orangered;
+}
+.container {
+  display: flex;
+}

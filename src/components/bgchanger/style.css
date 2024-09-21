@@ -1,0 +1,37 @@
+:root{
+  --back: #ffffff
+  --text-primary: #000
+}
+[data-theme="dark"] {
+  --back:#000
+  --text-primary: #ffffff
+}
+.light-dark-theme{
+  background-color: var(--back);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.light-dark-theme .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.light-dark-theme .container h1{
+  color: var(--text-primary);
+  font-size:40px;
+  margin:2px;
+}
+.light-dark-theme .container button{
+  background-color: var(--back);
+  border: 1px solid var(--button);
+  padding:12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
