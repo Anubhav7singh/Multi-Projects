@@ -23,60 +23,116 @@ import Navbar from "./components/Foodrecipie";
 import Home from "./components/Foodrecipie/Home";
 import Favourites from "./components/Foodrecipie/Favourite";
 import Details from "./components/Foodrecipie/Details";
+import { Container, Flex, Box } from "@chakra-ui/react";
+import Main from "./components/Expencetracker/Index";
 // import Featurejsx from "./components/Flagcontext";
 // import Featuresflags from "./components/Flagcontext/COntext";
 function App() {
   return (
-    <>
-      <div>
-        <Navbar />
+    <div className="min-h-screen p-6  text-gray-600 text-lg ">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/favourite" element={<Favourites />} />
+        <Route path="/details/:id" element={<Details />} />
+      </Routes>
+    </div>
+    // <Container maxW={"Container.3xl"} height={"100vh"} p={"0"}>
+    //   <Flex height={"full"}>
+    //     <Box height={"full"} flex={"5"} w={["20%", "30%", "20%", "50%", "60%"]}>
+    //       <Main></Main>
+    //     </Box>
+    //   </Flex>
+    // </Container>
+  );
+
+  {
+    /* <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/favourite" element={<Favourites />} />
           <Route path="/details/:id" element={<Details />} />
-        </Routes>
+        </Routes> */
+  }
 
-        {/* <Navbarr />
+  {
+    /* <Navbarr />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/cart" element={<Cart />} />
-        </Routes> */}
-      </div>
+        </Routes> */
+  }
 
-      {/* <div className="min-h-screen p-6  text-gray-600 text-lg ">
+  {
+    /* <div className="min-h-screen p-6  text-gray-600 text-lg ">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/favourite" element={<Favourites />} />
           <Route path="/details/:id" element={<Details />} />
         </Routes>
-      </div> */}
-      {/* <Weather /> */}
-      {/* <Usewindowresise /> */}
-      {/* <Useoutsideclick /> */}
-      {/* <Fetchdatas /> */}
-      {/* <Featurejsx>
+      </div> */
+  }
+  {
+    /* <Weather /> */
+  }
+  {
+    /* <Usewindowresise /> */
+  }
+  {
+    /* <Useoutsideclick /> */
+  }
+  {
+    /* <Fetchdatas /> */
+  }
+  {
+    /* <Featurejsx>
         <Featuresflags /  
-      </Featurejsx> */}
-      {/* <Tictactoe /> */}
-      {/* Accordian component */}
-      {/* <Accordian /> */}
-      {/* Random color component */}
-      {/* <Randomcolor /> */}
-      {/* Star Rating */}
-      {/* <Starrating noofstars={10} /> */}
-      {/* <Imageslider
+      </Featurejsx> */
+  }
+  {
+    /* <Tictactoe /> */
+  }
+  {
+    /* Accordian component */
+  }
+  {
+    /* <Accordian /> */
+  }
+  {
+    /* Random color component */
+  }
+  {
+    /* <Randomcolor /> */
+  }
+  {
+    /* Star Rating */
+  }
+  {
+    /* <Starrating noofstars={10} /> */
+  }
+  {
+    /* <Imageslider
         url={"https://picsum.photos/v2/list"}
         page={"1"}
         limit={"10"}
-      /> */}
-      {/* <Loadmoredata /> */}
-      {/* <Qrcode /> */}
-      {/* <Bgchanger /> */}
-      {/* <Scrollindicator url={"https://dummyjson.com/products?limit=100"} /> */}
-      {/* <Modaltest /> */}
-    </>
-  );
+      /> */
+  }
+  {
+    /* <Loadmoredata /> */
+  }
+  {
+    /* <Qrcode /> */
+  }
+  {
+    /* <Bgchanger /> */
+  }
+  {
+    /* <Scrollindicator url={"https://dummyjson.com/products?limit=100"} /> */
+  }
+  {
+    /* <Modaltest /> */
+  }
 }
 
 export default App;
